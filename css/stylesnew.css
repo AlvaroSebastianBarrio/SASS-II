@@ -1,8 +1,3 @@
-.pagina_contacto, .divProductos2, .productos_ofrecidos {
-  display: flex;
-  flex-direction: row;
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -11,10 +6,14 @@
   text-decoration: none;
   color: white;
 }
+html{
+  height: 100vh;
+}
 
 .bg-colornav {
-  background-color: black;
+  background-color: rgb(18, 18, 136);
   height: 16%;
+  font-style: italic;
 }
 
 .nav-link {
@@ -60,20 +59,24 @@
   color: black;
 }
 
-.PiePagina {
+footer.PiePagina {
   display: flex;
   width: 100%;
   height: 15%;
-  position: absolute;
+  position: fixed;
   bottom: 0;
-  background-color: black;
+  margin: 0;
+  background-color: rgb(18, 18, 136);
   align-items: center;
   justify-content: center;
+  /* align-self: flex-end; */
 }
 
 body {
   height: 100vh;
   display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   background-image: url(../img/fondobg.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -108,6 +111,7 @@ li > a:hover {
 
 #navbarSupportedContent {
   background-color: black;
+  border-radius: 15px;
 }
 
 .dropdown-item {
@@ -119,6 +123,7 @@ li > a:hover {
 }
 
 /*----------Pagina index------------------*/
+
 .carrousel1 {
   z-index: -1;
 }
@@ -291,8 +296,8 @@ li > a:hover {
 .ContainerPadreServicios1 {
   display: grid;
   margin-top: 0%;
-  background-color: white;
-  grid-template-columns: repeat(3, 0.34fr);
+  /* background-color: white; */
+  grid-template-columns: repeat(3, 0.27fr);
   grid-template-rows: auto auto;
   gap: 2px;
   padding: 2px;
@@ -307,6 +312,7 @@ li > a:hover {
   justify-content: center;
   /* object-fit: cover; */
   background-color: red;
+  border: 4px solid black;
 }
 
 .titulo1 {
@@ -323,6 +329,7 @@ li > a:hover {
   justify-content: center;
   /* object-fit: cover; */
   background-color: yellowgreen;
+  border: 4px solid black;
 }
 
 .titulo2 {
@@ -339,6 +346,7 @@ li > a:hover {
   align-items: center;
   justify-content: center;
   background-color: blueviolet;
+  border: 4px solid black;
 }
 
 .titulo3 {
@@ -355,6 +363,7 @@ li > a:hover {
   align-items: center;
   justify-content: center;
   background-color: aqua;
+  border: 4px solid black;
 }
 
 .titulo4 {
@@ -371,6 +380,7 @@ li > a:hover {
   align-items: center;
   justify-content: center;
   background-color: darkgreen;
+  border: 4px solid black;
 }
 
 .titulo5 {
@@ -387,6 +397,7 @@ li > a:hover {
   align-items: center;
   justify-content: center;
   background-color: pink;
+  border: 4px solid black;
 }
 
 .titulo6 {
@@ -464,8 +475,41 @@ li > a:hover {
 }
 
 /*--------------- Pagina de Servicios 2----------------- */
+.containerservicios2{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items:center;
+  justify-content: center;
+  
+
+}
+.card{
+  margin: 10px;
+  height: 30vh;
+  border: 3px solid black;
+  display:flex;
+  flex-direction: column;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+
+}
+.card-body{
+  text-align: center;
+  justify-content: center;
+}
+.btn btn-primary{
+  margin-top: auto;
+}
+
 .card-title {
   color: crimson;
+}
+
+.card:hover{
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.9);
+  transform: translateY(-3%);
 }
 
 /* ----------------------------------------------------- */
@@ -477,10 +521,21 @@ li > a:hover {
     grid-template-columns: repeat(1, 1fr);
     /* grid-template-rows: auto auto auto auto auto auto; */
   }
-  /* Pie de Pagina de Servicios1 */
-  .PiePagina {
-    position: fixed;
-  }
+  .containerservicios2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: center;
+    }
+    .card{
+      display: flex;
+      flex-direction: column;
+      margin: 30px;
+      height: 30vh;
+      border: 3px solid black;
+    }  
+ 
   /* Productos1 */
   .productos_ofrecidos {
     margin-top: 100%;
@@ -529,9 +584,7 @@ li > a:hover {
   border-radius: 20%;
 }
 
-/*.bg-colornavgrad {
-	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(14,14,101,1) 35%, rgba(0,212,255,1) 100%);
-}*/
+
 #main-header {
   position: absolute;
   height: 26%;
@@ -560,20 +613,13 @@ li > a:hover {
   color: black;
 }
 
-.PiePagina {
-  display: flex;
-  width: 100%;
-  height: 15%;
-  position: absolute;
-  bottom: 0;
-  background-color: rgb(18, 18, 136);
-  align-items: center;
-  justify-content: center;
-}
+
 
 body {
   height: 100vh;
   display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   background-image: url(../img/fondobg.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -658,4 +704,4 @@ li > a:hover {
   height: 15%;
 }
 
-/*# sourceMappingURL=stylesnew.css.map */
+
