@@ -25,9 +25,9 @@ html{
   border-radius: 20%;
 }
 
-.bg-colornavgrad {
+/* .bg-colornavgrad {
   background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(14, 14, 101) 35%, rgb(0, 212, 255) 100%);
-}
+} */
 
 #main-header {
   position: absolute;
@@ -69,7 +69,7 @@ footer.PiePagina {
   background-color: rgb(18, 18, 136);
   align-items: center;
   justify-content: center;
-  /* align-self: flex-end; */
+  
 }
 
 body {
@@ -89,7 +89,6 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: yellow; */
   position: relative;
 }
 
@@ -222,7 +221,9 @@ li > a:hover {
   display: flex;
   padding: 1%;
   width: 200px;
-  height: 250px;
+  height: 200px;
+  border: 4px solid black;
+  border-radius: 20px;
 }
 
 .contenedor_pag_productos {
@@ -475,7 +476,8 @@ li > a:hover {
 }
 
 /*--------------- Pagina de Servicios 2----------------- */
-.containerservicios2{
+.container{
+  background-color:  rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -489,13 +491,16 @@ li > a:hover {
   height: 30vh;
   border: 3px solid black;
   display:flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
   cursor: default;
   transition: all 400ms ease;
 
 }
 .card-body{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   text-align: center;
   justify-content: center;
 }
@@ -506,6 +511,7 @@ li > a:hover {
 .card-title {
   color: crimson;
 }
+
 
 .card:hover{
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.9);
@@ -521,24 +527,35 @@ li > a:hover {
     grid-template-columns: repeat(1, 1fr);
     /* grid-template-rows: auto auto auto auto auto auto; */
   }
-  .containerservicios2{
+  
+  /* .container{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; 
     align-items:center;
     justify-content: center;
-    }
+    
+   }
+
+
     .card{
-      display: flex;
+      display:flex;
       flex-direction: column;
-      margin: 30px;
-      height: 30vh;
+      flex-wrap: wrap;
+      margin: 5px;
+      height: 31vh;
       border: 3px solid black;
-    }  
+      
+    }   */
+    
  
   /* Productos1 */
   .productos_ofrecidos {
-    margin-top: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
   .body {
     background-repeat: repeat;
@@ -559,7 +576,8 @@ li > a:hover {
     justify-content: space-around;
     align-items: center;
   }
-}
+  
+
 /*----------Pagina index------------------*/
 * {
   padding: 0;
@@ -705,3 +723,15 @@ li > a:hover {
 }
 
 
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url(../img/fondobg.png);
+  background-repeat: repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+}
