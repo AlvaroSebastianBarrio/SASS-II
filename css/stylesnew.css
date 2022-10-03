@@ -217,7 +217,7 @@ li > a:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.img_prod {
+.productos_ofrecidos > img {
   display: flex;
   padding: 1%;
   width: 200px;
